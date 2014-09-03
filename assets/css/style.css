@@ -151,13 +151,13 @@ textarea:-moz-placeholder { color:#a9a9a9; }
     background-position: 10px -150px;
 }
 #center .btleft .tab.tab6{
-    background-position: 10px -150px;
-}
-#center .btleft .tab.tab7{
     background-position: 10px -190px;
 }
+#center .btleft .tab.tab7{
+    background-position: 10px -230px;
+}
 #center .btleft .tab.tab8{
-    background-position: 10px -228px;
+    background-position: 10px -272px;
 }
 #center .btright{
     width: 872px;
