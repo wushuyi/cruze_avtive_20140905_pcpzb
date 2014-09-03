@@ -90,8 +90,8 @@ textarea:-moz-placeholder { color:#a9a9a9; }
     left: 50%;
 }
 #center .tit{
-    width: 384px;
-    height: 32px;
+    width: 386px;
+    height: 34px;
     background: url("../image/tit.png") no-repeat;
     position: absolute;
     left: 50%;
