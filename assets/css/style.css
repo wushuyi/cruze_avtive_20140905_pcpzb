@@ -1,0 +1,253 @@
+/* A Linux- and Windows-friendly sans-serif font stack: http://prospects.mhurrell.co.uk/post/updating-the-helvetica-font-stack */
+body {font: 13px Helmet, Freesans, sans-serif;}
+
+/* Using local fonts? Check out Font Squirrel's webfont generator: http://www.fontsquirrel.com/tools/webfont-generator */
+
+/* We like off-black for text. */
+body, select, input, textarea {color: #333;}
+
+a {color: #03f;}
+a:hover {color: #69f;}
+
+/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
+::selection {background: #fcd700; color: #fff; text-shadow: none;} 
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #fcd700;} 
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+/* Mozilla dosen't style place holders by default */
+input:-moz-placeholder { color:#a9a9a9; }
+textarea:-moz-placeholder { color:#a9a9a9; }
+
+#wrapper , #loading{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    min-width: 1000px;
+}
+#loading{
+    z-index: 10;
+    background-color: #282828;
+}
+#loading .loadimg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+}
+#mid{
+    position: absolute;
+    top: 0;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+}
+#mid .bg{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+#mid .bg img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+#mid .cruzeLogo{
+    position: absolute;
+    width: 184px;
+    height: 18px;
+    margin-left: 34px;
+    margin-top: 20px;
+    top:0;
+    left: 0;
+}
+#mid .chevroletLogo{
+    position: absolute;
+    width: 82px;
+    height: 45px;
+    margin-right: 50px;
+    margin-top: 10px;
+    top: 0;
+    right: 0;
+}
+
+#center{
+    position: absolute;
+    width: 1004px;
+    height: 428px;
+    margin-left: -502px;
+    margin-top: -214px;
+    top: 50%;
+    left: 50%;
+}
+#center .tit{
+    width: 384px;
+    height: 32px;
+    background: url("../image/tit.png") no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -192px;
+    margin-top: -46px;
+}
+#center .top{
+    width: 1004px;
+    height: 84px;
+    background: url("../image/pzb_tit.png") no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#center .btleft{
+    width: 128px;
+    height: 328px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#center .btleft .swTab{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#center .btleft .tab{
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 1px;
+    background-color: #828282;
+    background-image: url("../image/pzb_nav.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+#center .btleft .tab:hover, #center .btleft .tab.active{
+    background-color: #961B2C;
+}
+#center .btleft .tab.last{
+    margin-bottom: 0px;
+}
+#center .btleft .tab.tab1{
+    background-position: 10px 14px;
+}
+#center .btleft .tab.tab2{
+    background-position: 10px -26px;
+}
+#center .btleft .tab.tab3{
+    background-position: 10px -68px;
+}
+#center .btleft .tab.tab4{
+    background-position: 10px -108px;
+}
+#center .btleft .tab.tab5{
+    background-position: 10px -150px;
+}
+#center .btleft .tab.tab6{
+    background-position: 10px -150px;
+}
+#center .btleft .tab.tab7{
+    background-position: 10px -190px;
+}
+#center .btleft .tab.tab8{
+    background-position: 10px -228px;
+}
+#center .btright{
+    width: 872px;
+    height: 328px;
+    background: url("../image/pzb_cent1.png") no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+#center .btright .centTable{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#center .btright .centTable li{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+#center .btright .centTable li.active{
+    display: block;
+}
+#bt{
+    position: absolute;
+    height: 50px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #181818;
+}
+#bt .btbox{
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    background: url("../image/yysj_bt.png") no-repeat;
+}
+#bt .btNav{
+    width: 416px;
+    height: 100%;
+    float: left;
+}
+#bt .btNav li{
+    height: 50px;
+    float: left;
+}
+#bt .btNav a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+#bt .btNav .curze1{
+    width: 148px;
+}
+#bt .btNav .curze2{
+    width: 128px;
+}
+#bt .btNav .curze3{
+    width: 140px;
+}
+#bt .tryBox{
+    width: 584px;
+    height: 100%;
+    float: right;
+    position: relative;
+}
+#bt .tryBox input, #bt .tryBox button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+#bt .name, #bt .phone{
+    width: 136px;
+    height: 32px;
+    position: absolute;
+    top: 8px;
+    color: #ffffff;
+    text-indent: 16px;
+    font-size: 18px;
+}
+#bt .name{
+    left: 148px;
+}
+#bt .phone{
+    left: 286px;
+}
+#bt .submit{
+    position: absolute;
+    width: 146px;
+    height: 42px;
+    top: 2px;
+    left: 438px;
+}
