@@ -2,6 +2,9 @@
     window.totalE = window.totalE || {};
     $cache = {};
     $(document).ready(function () {
+        $cache.window = $(window);
+        $cache.wrapper = $('#wrapper');
+        pgResize();
         // 禁止拖动img元素
         $(document.images).on('dragstart', function(e){
             return false;
@@ -100,6 +103,29 @@
          
      });
      $(window).resize(function() {
-
+        pgResize();
      });
+
+    function pgResize(){
+         var winW = $cache.window.width();
+         var winH = $cache.window.height();
+         if(winH < 700){
+             $cache.wrapper.css({
+                height: "700px"
+            });
+         }else{
+             $cache.wrapper.css({
+                height: "100%"
+            });
+         }
+         if(winW < 1000){
+             $cache.wrapper.css({
+                 width: '1000px'
+             });
+         }else{
+             $cache.wrapper.css({
+                 width: '100%'
+             });
+         }
+    }
 })(window.jQuery);
