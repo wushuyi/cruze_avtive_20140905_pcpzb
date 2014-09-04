@@ -251,3 +251,13 @@ textarea:-moz-placeholder { color:#a9a9a9; }
     top: 2px;
     left: 438px;
 }
+@media (max-height: 700px)  {
+    #wrapper{
+        height: 700px;
+    }
+}
+@media (max-width: 1000px) {
+    #wrapper {
+        width: 1000px;
+    }
+}
