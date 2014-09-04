@@ -1,4 +1,5 @@
 (function ($) {
+    window.totalE = window.totalE || {};
     $cache = {};
     $(document).ready(function () {
         // 禁止拖动img元素
@@ -74,11 +75,18 @@
                 pro:'1',
                 purchase_intention:'三个月内'
             };
+            $(window.totalE).trigger('tryBefore', {});
             $.getJSON('http://www.chevrolet.com.cn/brandsite/ccc/try_order_sync.ashx?callback=?', cccdata, function(data){
                 if (data.result == "success") {
                     if (data.jsonResponse == 0) {
                         alert("提交失败");
                     } else if (data.jsonResponse == 1) {
+                        $(window.totalE).trigger('trySuccess', {
+                            car: cccdata.car,
+                            name: cccdata.name,
+                            phone: cccdata.mobile,
+                            record_id: data.record_id
+                        });
                         alert('提交成功');
                     }
                 } else {
