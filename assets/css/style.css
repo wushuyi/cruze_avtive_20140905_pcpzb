@@ -45,7 +45,7 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 #mid{
     position: absolute;
     top: 0;
-    bottom: 50px;
+    bottom: 44px;
     left: 0;
     right: 0;
 }
@@ -90,7 +90,7 @@ textarea:-moz-placeholder { color:#a9a9a9; }
     left: 50%;
 }
 #center .tit{
-    width: 386px;
+    width: 354px;
     height: 34px;
     background: url("../image/tit.png") no-repeat;
     position: absolute;
@@ -183,7 +183,7 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 }
 #bt{
     position: absolute;
-    height: 50px;
+    height: 44px;
     bottom: 0;
     right: 0;
     left: 0;
@@ -201,7 +201,7 @@ textarea:-moz-placeholder { color:#a9a9a9; }
     float: left;
 }
 #bt .btNav li{
-    height: 50px;
+    height: 44px;
     float: left;
 }
 #bt .btNav a{

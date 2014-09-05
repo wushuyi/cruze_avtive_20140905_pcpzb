@@ -109,9 +109,9 @@
     function pgResize(){
          var winW = $cache.window.width();
          var winH = $cache.window.height();
-         if(winH < 700){
+         if(winH < 630){
              $cache.wrapper.css({
-                height: "700px"
+                height: "630px"
             });
          }else{
              $cache.wrapper.css({
